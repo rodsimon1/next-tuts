@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import styles from '../../styles/Ninjas.module.css';
+import styles from '../../styles/Members.module.css';
 
 export const getStaticProps = async () => {
   const res = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -8,21 +8,21 @@ export const getStaticProps = async () => {
 
   // return to this function should always be a props object
   return {
-    props: { ninjas: data },
+    props: { members: data },
   };
 };
 
-const Ninjas = ({ ninjas }) => {
+const Members = ({ members }) => {
   return (
     <>
       {/* index creates root component, so path is just [folderName]/ */}
       <div>
-        <h1>All Ninjas</h1>
+        <h1>All Members</h1>
 
-        {ninjas.map((ninja) => (
-          <Link key={ninja.id} href={`/ninjas/${ninja.id}`}>
+        {members.map((member) => (
+          <Link key={member.id} href={`/members/${member.id}`}>
             <a className={styles.single}>
-              <h3>{ninja.name}</h3>
+              <h3>{member.name}</h3>
             </a>
           </Link>
         ))}
@@ -31,4 +31,4 @@ const Ninjas = ({ ninjas }) => {
   );
 };
 
-export default Ninjas;
+export default Members;

@@ -6,8 +6,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Ninja List | {children.type.name}</title>
-        <meta name="keywords" content="ninjas" />
+        <title>Member List | {children.type.name}</title>
+        <meta name="keywords" content="members" />
       </Head>
       <div className="content">
         <Navbar />
