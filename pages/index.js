@@ -18,8 +18,8 @@ export default function Home() {
           repudiandae.
         </p>
 
-        <Link href="/ninjas">
-          <a className={styles.btn}> See Ninja Listing</a>
+        <Link href="/members">
+          <a className={styles.btn}> See Member Listing</a>
         </Link>
       </div>
     </>
