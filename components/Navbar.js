@@ -6,6 +6,7 @@ const Navbar = () => {
     <nav>
       <div className="logo">
         <Image src="/logo3.png" alt="logo" width={77} height={77} />
+        <h3>Chosen Members</h3>
       </div>
 
       <Link href="/">

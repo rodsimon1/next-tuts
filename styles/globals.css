@@ -27,6 +27,16 @@ nav a {
 nav .logo {
   margin-right: auto;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h3 {
+  margin-left: 20px;
+}
+
 footer {
   display: block;
   text-align: center;
